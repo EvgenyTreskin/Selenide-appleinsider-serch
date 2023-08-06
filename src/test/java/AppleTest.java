@@ -9,6 +9,7 @@ public class AppleTest extends BaseTest {
     @Test
     public void checkHref() throws InterruptedException {
         MainPage mainPage = new MainPage(BASE_URL);
+        Thread.sleep(3000);
         mainPage.search(SEARCH_REQUEST);
         SearchPage searchPage = new SearchPage();
         String href = searchPage.getHrefFromFirstArticle();

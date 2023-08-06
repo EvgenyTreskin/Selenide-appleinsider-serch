@@ -21,7 +21,9 @@ public class MainPage {
      */
 
     public void search(String searchString) throws InterruptedException {
-        textBoxInput.setValue(searchString).sendKeys(Keys.ENTER);
+        textBoxInput.setValue(searchString);
+        Thread.sleep(2000);
+        textBoxInput.sendKeys(Keys.ENTER);
     }
 
 }
